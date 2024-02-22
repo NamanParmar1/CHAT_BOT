@@ -40,6 +40,29 @@
 .read-the-docs {
   color: #888;
 } */
+.app{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: -webkit-fill-available;
+}
+
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+
+.sidebar{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .bot_form{
   display: flex;

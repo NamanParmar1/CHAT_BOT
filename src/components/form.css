@@ -1,5 +1,13 @@
+.parent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .form-creator-container {
-  max-width: 600px;
+  max-height: 500px;
+  height: fit-content;
+  width: 300px;
+  /* max-width: 600px; */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
   border: 1px solid #ccc;
@@ -8,33 +16,45 @@
 }
 
 .chat-area {
-  max-height: 300px;
+  font-size:15px;
+  height: 300px;
   overflow-y: auto;
   margin-bottom: 20px;
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
 }
 
 .message {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .message p {
   margin: 0;
   padding: 10px;
   border-radius: 8px;
+  word-wrap: break-word; /* Allow words to break and wrap onto the next line */
 }
 
 .message.user p {
-  /* background-color: #007bff; */
+  margin-left: 50px;
   color: #fff;
   text-align: right;
+  background-color:#319945;
+  border-top-right-radius: 0;
 }
 
 .message.bot p {
-  background-color: #3ecf3b;
+  margin-right: 50px;
+  background-color: #303530;
   text-align: left;
+  border-top-left-radius: 0;
 }
 
 .input-field {
+  height: min-content;
   width: calc(100% - 60px); /* Adjust for the mic and send button */
   padding: 10px;
   border: 1px solid #ccc;
@@ -42,7 +62,8 @@
   margin-right: 10px;
 }
 
-.mic-button, .send-button {
+.mic-button,
+.send-button {
   width: 40px;
   height: 40px;
   background-color: #007bff;
@@ -68,6 +89,7 @@
 
 .form-preview {
   width: 600px;
+  min-height: 350px;
   margin: 0 20px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -88,7 +110,7 @@
 
 .submit-button {
   width: 100%;
-  background-color: #007bff;
+  background-color: #319945;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -100,15 +122,13 @@
   background-color: #0056b3;
 }
 
-.botform{
+.botform {
   display: flex;
 }
 
-.chat_form{
+.chat_form {
   display: flex;
 }
-
-
 
 .modal-overlay {
   position: fixed;
@@ -130,14 +150,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.top{
+.top {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
 .create-form {
-  background-color: #9a98f2; 
+  background-color: #9a98f2;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -146,5 +166,5 @@
 }
 
 .create-form:hover {
-  background-color: #2b36d1; 
+  background-color: #2b36d1;
 }
